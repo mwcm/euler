@@ -40,29 +40,6 @@ def primeFactors(n):
     # number greater than 2
     if n > 2:
         print(n)
-
-
-# another working solution
-# def biggest_prime_multiple(number):
-
-    i_prime = number
-    biggest_prime = 1
-
-    for i in range(2, number):
-        while i_prime % i == 0:
-            i_prime = i_prime // i
-            biggest_prime = i
-        if 1 == i_prime:
-            break
-
-    return biggest_prime
-
-
-
-# this finds factors of 600851475143
-# for i in range(2, 600851475143):
-    # if 600851475143 % i == 0:
-        # print(i)
 """
 
 # key insight here is that every whole number breaks into primes,
